@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    public static Main coderrtimer;
+    public static Main coderrtimer; //instance
     public static de.coderr.core.Main coderrcore;
 
     public static ChatColor themecolor;
