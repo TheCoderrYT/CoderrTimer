@@ -1,0 +1,13 @@
+name: CoderrTimer
+version: '${project.version}'
+main: de.coderr.timer.Main
+api-version: 1.18
+prefix: CoderrTimer
+authors: [ TheCoderr ]
+website: www.foerster.cologne
+loadbefore:
+  - CoderrJumpAndRun
+commands:
+  timer:
+    usage: /timer [start|stop|remove] [Players separated by "," | timetyp] [player]
+    description: Set timers for different players
