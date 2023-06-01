@@ -1,5 +1,6 @@
 # CoderrTimer
-Ein Plugin, dass Stoppuhren für jeden Spieler einzeln oder auch anpassbare Gruppenstoppuhren bereitstellt.
+Ein Plugin, dass Stoppuhren für jeden Spieler einzeln oder auch anpassbare Gruppenstoppuhren bereitstellt.<br>
+Das Plugin ist kompatibel mit dem `CoderrCore`-Plugin, dadurch können Einstellungen zum Erscheinungsbild entsprechend angepasst werden.
 ## Installation
 Klicke auf die `CoderrTimer.jar`-Datei und lade sie dir herunter. 
 Anschließend die Datei in den Plugins-Ordner deines Spigot Servers ziehen und fertig.
