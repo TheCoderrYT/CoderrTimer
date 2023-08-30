@@ -3,12 +3,14 @@ package de.coderr.timer;
 import de.coderr.timer.manager.TimerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.File;
 
 public final class Main extends JavaPlugin {
 
     public static Main coderrtimer; //instance
-    public static de.coderr.core.Main coderrcore;
 
     public static ChatColor themecolor;
     public static ChatColor fontcolor;
@@ -23,10 +25,10 @@ public final class Main extends JavaPlugin {
         coderrtimer = this;
 
         if (Bukkit.getServer().getPluginManager().isPluginEnabled("CoderrCore")) {
-            coderrcore = (de.coderr.core.Main) Bukkit.getServer().getPluginManager().getPlugin("CoderrCore");
+            YamlConfiguration configuration = YamlConfiguration.loadConfiguration(new File("plugins//CoderrCore//config.yml"));
 
-            themecolor = de.coderr.core.Main.themecolor;
-            fontcolor = de.coderr.core.Main.fontcolor;
+            themecolor = ChatColor.valueOf(configuration.getString("theme.primarycolor"));
+            fontcolor = ChatColor.valueOf(configuration.getString("theme.fontcolor"));
 
             System.out.println(consoleprefix + "CoderrCore-Einstellungen wurden geladen.");
         } else {

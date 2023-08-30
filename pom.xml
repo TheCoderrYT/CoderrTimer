@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.coderr</groupId>
-    <artifactId>timer</artifactId>
+    <artifactId>CoderrTimer</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -75,6 +75,7 @@
             <groupId>de.coderr</groupId>
             <artifactId>core</artifactId>
             <version>0.1.3</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
